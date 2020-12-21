@@ -1,5 +1,6 @@
 :root {
   --primary-color:#e50914;
+  --dark-color:#141414;
 }
 
 * {
@@ -114,6 +115,54 @@ img {
   font-size: 1.9rem;
   line-height: 1.25rem;
   margin: 0 0 2rem;
+}
+
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2rem;
 }
 
 .btn {

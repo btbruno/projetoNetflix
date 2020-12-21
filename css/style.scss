@@ -1,6 +1,7 @@
 // Basic Style
 :root{
     --primary-color:#e50914;
+    --dark-color:#141414;
 }
 
 *{
@@ -98,6 +99,50 @@ img{
 
     }
 
+}
+
+// tabs
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        > div{
+            padding: 1.5rem 0;
+
+            &:hover{
+                color: white;
+                cursor: pointer;
+                transition: .5s;
+            }
+        }
+    }
+    p{
+        font-size: 1.2rem;
+        padding-top:0.5rem;
+
+    }
+}
+
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+// Container
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    
 }
 
 // Buttons
